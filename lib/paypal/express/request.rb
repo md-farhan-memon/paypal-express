@@ -30,6 +30,7 @@ module Paypal
           :state => :PAYMENTREQUEST_0_SHIPTOSTATE,
           :zip => :PAYMENTREQUEST_0_SHIPTOZIP,
           :country => :PAYMENTREQUEST_0_SHIPTOCOUNTRY,
+          :invoice_number => :PAYMENTREQUEST_0_INVNUM,
           :phone => :PAYMENTREQUEST_0_SHIPTOPHONENUM
 
         }.each do |option_key, param_key|
