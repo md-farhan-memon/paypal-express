@@ -32,7 +32,9 @@ module Paypal
           :zip => :PAYMENTREQUEST_0_SHIPTOZIP,
           :country => :PAYMENTREQUEST_0_SHIPTOCOUNTRY,
           :invoice_number => :PAYMENTREQUEST_0_INVNUM,
-          :phone => :PAYMENTREQUEST_0_SHIPTOPHONENUM
+          :phone => :PAYMENTREQUEST_0_SHIPTOPHONENUM,
+          :logo => :LOGOIMG,
+          :hdrimg => :HDRIMG
 
         }.each do |option_key, param_key|
           params[param_key] = options[option_key] if options[option_key]
